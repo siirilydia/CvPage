@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Siiri Helin</title>
+    <!--<style>
+        #content div {
+            margin-bottom: 30px;
+        }
+    </style>-->
+    <script src="./lib/lax.min.js"></script>
+    <script>
+        window.onload = function () {
+            lax.setup() // init
+
+            const updateLax = () => {
+                lax.update(window.scrollY)
+                window.requestAnimationFrame(updateLax)
+            }
+
+            window.requestAnimationFrame(updateLax)
+        }
+    </script>
+</head>
+<body class="lax" id="tausta" data-lax-bg-pos-y="0 0, 10000 -10 | loop=10000">
+    <link href="Taustakuvaharjoitus.css" rel="stylesheet" />
+    <!--<div class="lax" id="tausta" data-lax-bg-pos-y="0 0, 1000 -800 | loop=10000">-->
+        <!--<div class="parallax">
+        <div class="parallax__layer parallax__layer--back">
+        </div>
+        <div class="parallax__layer parallax__layer--base">-->
+        <div id="content" class="lax" data-lax-bg-pos-y="0 0, 10000 -10 | loop=10000" >
+            <h1>Siiri Helin</h1>
+        </div>
+        <div id="content">
+            <div id="vasen">
+                <div id="badge">
+                    <h1>Otsikko</h1>
+                    <p class="eka">Tekstiä tekstiä tekstiä tekstiä tekstiä tekstiä tekstiä tekstiä tekstiä tekstiä tekstiä</p>
+                </div>
+            </div>
+            <div id="vasentaso">
+
+            </div>
+            <div id="oikea">
+                <h2>Otsikko</h2>
+                <p class="lax" data-lax-preset="spin fadeInOut">Look at me goooooo!</p>
+                <p>Tekstiä tekstiä tekstiä tekstiä tekstiä tekstiä tekstiä tekstiä tekstiä tekstiä tekstiä</p>
+            </div>
+            <div id="oikeataso">
+
+            </div>
+            <div id="vasen">
+                <div id="badge">
+                    <h2>Otsikko</h2>
+                    <p>Tekstiä tekstiä tekstiä tekstiä tekstiä tekstiä tekstiä tekstiä tekstiä tekstiä tekstiä</p>
+                </div>
+            </div>
+            <div id="vasentaso">
+
+            </div>
+            <div id="oikea">
+                <h3>Otsikko</h3>
+                <p>Tekstiä tekstiä tekstiä tekstiä tekstiä tekstiä tekstiä tekstiä tekstiä tekstiä tekstiä</p>
+                <img id="gif" src="img/pupu.gif">
+            </div>
+            <div id="oikeataso">
+
+            </div>
+            <div id="vasen">
+                <div id="badge">
+                    <h3>Otsikko</h3>
+                    <p>Linkki</p>
+                    <p>Linkki</p>
+                    <p>Linkki</p>
+                    <p>Linkki</p>
+                </div>
+            </div>
+            <div id="vasentaso">
+
+            </div>
+        </div>
+    <!--</div>-->
+    <!--</div>
+    </div>-->
+</body>
+</html>
