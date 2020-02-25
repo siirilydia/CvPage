@@ -1,0 +1,149 @@
+﻿
+nav {
+    top: 0px;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+}
+
+#tausta {
+    background-image: url(../img/tausta.jpg);
+    background-position: center;
+    background-size: cover;
+    /*background-color: #000000;*/
+    background-attachment: fixed;
+    align-content: center;
+}
+
+#content {
+    border-width: 20px;
+    border-color: #000000;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    /*background-image: url(../img/ajatuskupla.png);*/
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: center;
+    width: 80%;
+}
+
+#vasen {
+    padding-top: 50px;
+    margin-top: 50px;
+    margin-left: 40px;
+    margin-right: 600px;
+    text-align: center;
+    clear: left;
+    background-image: url(../img/tiiliseina.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    /*width: 410px;*/
+    height: 400px;
+    align-content: center;
+    /*background-color: white;
+    border: 3px solid #897a69;
+    border-radius: 30px/30px;
+    padding: 20px;
+    width: 160px;
+    margin-bottom: 10px;*/
+}
+
+#badge {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 40px;
+    /*align-content: center;*/
+    text-align: center;
+    background-image: url(../img/badge.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    /*width: 317px;*/
+    height: 400px;
+    /*background-color: white;
+    border: 3px solid #897a69;
+    border-radius: 30px/30px;*/
+    /*padding: 20px;*/
+    /*width: 160px;
+    margin-bottom: 10px;*/
+}
+
+#vasentaso {
+    width: 500px;
+    height: 92px;
+    margin-right: 600px;
+    background-image: url(../img/taso.png);
+    background-size: cover;
+}
+/*#vasen2 {
+    float: left;
+    clear: left;
+    background-color: white;
+    border: 3px solid #897a69;
+    border-radius: 30px/30px;
+    padding: 20px;
+    width: 160px;
+}*/
+
+
+#palsta {
+    /*float:*/
+    /*width: 400px;*/
+}
+/*#ontop {
+    visibility: visible;
+    background-color: white !important;
+    float: right;
+    border: 3px solid #897a69;
+    border-radius: 30px/30px;
+    padding: 20px;
+    width: 140px;
+    background-color: white;
+    margin-right: 20px;
+    margin-top: 20px;
+}*/
+
+/*#kuvaus:first-line {
+    text-align:center;
+}*/
+
+#oikea {
+    margin-right: 40px;
+    margin-left: 600px;
+    text-align: center;
+    clear: right;
+    /*vertical-align: central;*/
+    /*float:right;*/
+    /*width: 900px;
+    border: 3px solid #897a69;
+    border-radius: 30px/30px;
+    padding-left: 20px;
+    background-color: rgba(255,255,255,0.8);*/
+    /*opacity: 0.9*/
+}
+
+#oikeataso {
+    width: 300px;
+    height: 92px;
+    background-image: url(../img/taso.png);
+    background-size: contain;
+}
+
+h3 {
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.kuva {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
