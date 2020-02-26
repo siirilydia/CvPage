@@ -7,16 +7,17 @@
     <style>
         /* Place the navbar at the bottom of the page, and make it stick */
         .navbar {
-            background: url("img/valikkotausta.png");
+            background: url("img/valikko.png");
             background-size: contain;
             background-repeat: no-repeat;
             overflow: hidden;
             position: fixed;
             bottom: 0;
-            width: 100%;
+            width: 600pt;
+            height:40pt;
             text-align: center;
             left: calc(50vw - 240pt);
-            margin-bottom: 20px;
+            margin-bottom: 20pt;
         }
 
             /* Style the links inside the navigation bar */
@@ -25,9 +26,7 @@
                 display: block;
                 color: #000000;
                 text-align: center;
-                padding: 25px 30px 10px 30px;
-                margin-left: 10pt;
-                margin-right: 10pt;
+                padding: 10pt 11pt 3pt 11pt;
                 margin-bottom: 20px;
                 text-decoration: none;
                 font-size: 20px;
@@ -48,6 +47,9 @@
             /* Hide the link that should open and close the navbar on small screens */
             .navbar .icon {
                 display: none;
+                padding: 3pt 15pt 3pt 15pt;
+                margin-left: 5pt;
+                margin-right: 10pt;
             }
 
         /* When the screen is less than 675 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the navbar (.icon) */
@@ -55,8 +57,8 @@
 
             .navbar {
                 background: none;
-                left: calc(50vw - 170pt);
-                margin-bottom: 0px;
+                left: 10pt;
+                margin-bottom: 10pt;
             }
 
                 .navbar a {
@@ -64,56 +66,52 @@
                 }
 
                     .navbar a.icon {
-                        background: url("img/valikkoalhaalla.png");
+                        background: url("img/valikkoalas.png");
                         background-size: contain;
                         background-repeat: no-repeat;
-                        width: 200pt;
-                        height: 60pt;
-                        float: left;
+                        width: 90pt;
+                        height: 35pt;
                         display: block;
                         float: left;
-                        padding: 30pt 0px 0px 0px;
-                        margin-left: 10pt;
-                        margin-right: 5pt;
-                        margin-bottom: 15pt;
+                        padding: 11pt 15pt 11pt 10pt;
                     }
         }
 
         /* The "responsive" class is added to the navbar with JavaScript when the user clicks on the icon. This class makes the navbar look good on small screens (display the links vertically instead of horizontally) */
         @media screen and (max-width: 675px) {
-            .navbar.responsive a.icon {
-                background: none;
-                width: 35%;
-                float: left;
-                display: block;
-                float: left;
-                width: 40%;
-                height: 10%;
-                margin-bottom: 0px;
-                padding: 0px 0px 0px 50pt;
-            }
+           
 
             .navbar.responsive a {
-                width: 35%;
+                width: 90pt;
                 float: none;
                 display: block;
                 text-align: center;
-                padding: 3pt 5pt 3pt 50pt;
+                padding: 10pt 10pt 10pt 14pt;
+                margin-bottom: 0pt;
+            }
+
+             .navbar.responsive a.icon {
+                background: none;
+                /*float: left;*/
+                display: block;
+                width: 90pt;
+                /*height: 35pt;*/
+                margin-bottom: 0px;
+                /*padding: 10pt 10pt 10pt 10pt;*/
             }
 
             .navbar.responsive {
-                background: url("img/valikkomobiili.png");
+                background: url("img/valikkoylös.png");
                 background-size: contain;
                 background-repeat: no-repeat;
                 overflow: hidden;
                 position: fixed;
                 bottom: 0;
-                width: 200pt;
-                height: 220pt;
+                width: 130pt;
+                height: 230pt;
                 text-align: center;
-                left: calc(50vw - 170pt);
                 margin-bottom: 10pt;
-                padding-top: 40pt;
+                padding-top: 15pt;
             }
         }
 
@@ -131,7 +129,7 @@
             -ms-text-size-adjust: none;
         }
 
-        .lax{
+        .lax {
             transition: transform .3s;
         }
 
@@ -593,9 +591,10 @@
             </div>
             <div class="navbar lax" id="myNavbar" data-lax-translate-y="100 300, 300 0">
                 <a href="javascript:void(0);" onclick="scrollPaska(0,1050)">Alkuun</a>
-                <a href="javascript:void(0);" onclick="scrollPaska(0,1828)">Minä</a>
+                <a href="javascript:void(0);" onclick="scrollPaska(0,1828)">Esittely</a>
                 <a href="javascript:void(0);" onclick="scrollPaska(0,2500)">Projektit</a>
                 <a href="javascript:void(0);" onclick="scrollPaska(0,3080)">Yhteystiedot</a>
+                <a href="javascript:void(0);" onclick="scrollPaska(0,3080)">Tekijänoikeudet</a>
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">Valikko</a>
             </div>
         </div>
