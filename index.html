@@ -14,7 +14,7 @@
             position: fixed;
             bottom: 0;
             width: 600pt;
-            height:40pt;
+            height: 40pt;
             text-align: center;
             left: calc(50vw - 240pt);
             margin-bottom: 20pt;
@@ -79,7 +79,7 @@
 
         /* The "responsive" class is added to the navbar with JavaScript when the user clicks on the icon. This class makes the navbar look good on small screens (display the links vertically instead of horizontally) */
         @media screen and (max-width: 675px) {
-           
+
 
             .navbar.responsive a {
                 width: 90pt;
@@ -90,15 +90,15 @@
                 margin-bottom: 0pt;
             }
 
-             .navbar.responsive a.icon {
-                background: none;
-                /*float: left;*/
-                display: block;
-                width: 90pt;
-                /*height: 35pt;*/
-                margin-bottom: 0px;
-                /*padding: 10pt 10pt 10pt 10pt;*/
-            }
+                .navbar.responsive a.icon {
+                    background: none;
+                    /*float: left;*/
+                    display: block;
+                    width: 90pt;
+                    /*height: 35pt;*/
+                    margin-bottom: 0px;
+                    /*padding: 10pt 10pt 10pt 10pt;*/
+                }
 
             .navbar.responsive {
                 background: url("img/valikkoylös.png");
@@ -161,6 +161,16 @@
             top: 85vh;
         }
 
+        #kieli {
+            position: fixed;
+            padding:7pt;
+            /*top: calc(100vw - 150pt);*/
+        }
+
+        #kieli a{
+            color:white;
+        }
+
         #pupu {
             width: 100vw;
             height: 50vh;
@@ -192,10 +202,10 @@
             top: 7vh;
             left: calc(0 - 150pt);
         }
-        
-        #projektirpg a{
-            color:#ffffff;
-        }
+
+            #projektirpg a {
+                color: #ffffff;
+            }
 
         #projektikanitietokanta {
             background: url(img/kanitietokanta.png) no-repeat center top;
@@ -208,9 +218,9 @@
             left: calc(0 - 150pt);
         }
 
-        #projektikanitietokanta a{
-            color:#ffffff;
-        }
+            #projektikanitietokanta a {
+                color: #ffffff;
+            }
 
         #paperi {
             width: 35vh;
@@ -366,7 +376,7 @@
             margin-right: 2vh;*/
             margin-top: 7vh;
             /*padding: 3.5vh;*/
-            padding:3vh 5vh 10vh 5vh;
+            padding: 3vh 5vh 10vh 5vh;
             color: black;
             font-size: 2.2vh;
             background: url(img/projektiesittely.png) no-repeat center top;
@@ -518,7 +528,8 @@
 
             <div id="kukaolen" data-lax-translate-x="0 7000, 2400 -elw" class="lax">
                 Vapaa-aikani kuluu pääosin kotona pupuja paijaten
-                ja pelejä pelaten. Yksi lempiharrastuksistani on pöytäroolipelit ja haaveilen myös ratsastuksen aloittamisesta.
+                ja pelejä pelaten. Yksi lempiharrastuksistani on pöytäroolipelit ja haaveilen myös ratsastuksen aloittamisesta. 
+                Usko tai älä, olen silti 100% ekstrovertti.
                 <br />
                 <br />
                 Viiden vuoden kuluttua toivon löytäväni itseni työskentelemässä joko pelien tai sulautettujen järjestelmien parissa. Minua on aina
@@ -617,8 +628,13 @@
                 <a href="Tekijänoikeudet.html">Tekijänoikeudet</a>
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">Valikko</a>
             </div>
+
+            <div id="kieli" class="lax" data-lax-translate-y="0 0, 0 0">
+                <a href="Index-eng.html">English</a>
+            </div>
         </div>
     </div>
+
 
 
     <script>
