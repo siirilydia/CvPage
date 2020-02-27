@@ -121,7 +121,7 @@
             color: #F3F4F5;
             background: #3c2d7f;
             overflow-x: hidden;
-            height: 700vh;
+            height: 5500px;
             font-family: 'Montserrat', sans-serif;
             text-size-adjust: none;
             -webkit-text-size-adjust: none;
@@ -163,13 +163,13 @@
 
         #kieli {
             position: fixed;
-            padding:7pt;
+            padding: 7pt;
             /*top: calc(100vw - 150pt);*/
         }
 
-        #kieli a{
-            color:white;
-        }
+            #kieli a {
+                color: white;
+            }
 
         #pupu {
             width: 100vw;
@@ -405,6 +405,39 @@
             top: 140%;
             /*top: calc(100vw - 150pt);*/
         }
+
+        .nukkupupe {
+            background: url(img/nukkupupu.gif) no-repeat center top;
+            width: 35vh;
+            height: 35vh;
+            background-size: contain;
+            background-repeat: no-repeat;
+            position: fixed;
+            top: 52vh;
+            left: calc(90vw - 50pt);
+        }
+
+        .nukkupupelove {
+            background: url(img/nukkupupulove.gif) no-repeat center top;
+            width: 35vh;
+            height: 35vh;
+            background-size: contain;
+            background-repeat: no-repeat;
+            position: fixed;
+            top: 52vh;
+            left: calc(90vw - 50pt);
+        }
+
+        .nukkupupelovelove {
+            background: url(img/nukkupupulovelove.gif) no-repeat center top;
+            width: 35vh;
+            height: 35vh;
+            background-size: contain;
+            background-repeat: no-repeat;
+            position: fixed;
+            top: 52vh;
+            left: calc(90vw - 50pt);
+        }
     </style>
 
     <script src="./lib/lax.min.js"></script>
@@ -450,10 +483,10 @@
                  class="lax"></div>
 
             <div id="tervetuloa" class="lax"
-                 data-lax-translate-y="0 0, 300 -elw"></div>
+                 data-lax-translate-y="0 0, 300 -600"></div>
 
             <div id="skrollaa" class="lax"
-                 data-lax-translate-y="0 0, 200 500"></div>
+                 data-lax-translate-y="0 0, 200 600"></div>
 
             <div id="nuoli" class="lax"
                  data-lax-translate-y="0 0, 200 350"></div>
@@ -528,7 +561,7 @@
 
             <div id="kukaolen" data-lax-translate-x="0 7000, 2400 -elw" class="lax">
                 Vapaa-aikani kuluu pääosin kotona pupuja paijaten
-                ja pelejä pelaten. Yksi lempiharrastuksistani on pöytäroolipelit ja haaveilen myös ratsastuksen aloittamisesta. 
+                ja pelejä pelaten. Yksi lempiharrastuksistani on pöytäroolipelit ja haaveilen myös ratsastuksen aloittamisesta.
                 Usko tai älä, olen silti 100% ekstrovertti.
                 <br />
                 <br />
@@ -595,7 +628,6 @@
                     <br />
                     <!--<a href="#" name="skrollaa">Lisätietoja</a>-->
                     <!--<a href="2DRPG.html">Lisätietoja</a>-->
-
                     <br />
                 </div>
             </div>
@@ -618,8 +650,10 @@
                 <br />
                 <a href="tel:+358408448297">+358408448297</a>
                 <br />
-
             </div>
+
+            <div id="nukkupupe" class="lax nukkupupe" data-lax-translate-x="0 16000, 3500 -elw" onclick="paijaaPupua()"></div>
+
             <div class="navbar lax" id="myNavbar" data-lax-translate-y="100 300, 300 0">
                 <a href="javascript:void(0);" onclick="scrollPaska(0,1050)">Alkuun</a>
                 <a href="javascript:void(0);" onclick="scrollPaska(0,1828)">Esittely</a>
@@ -638,6 +672,7 @@
 
 
     <script>
+
         function scrollPaska(x, a) {
             window.scrollTo(x, a);
             myFunction();
@@ -651,6 +686,18 @@
 
             } else {
                 x.className = "navbar lax";
+            }
+        }
+
+        function paijaaPupua() {
+            var x = document.getElementById("nukkupupe");
+            if (x.className === "lax nukkupupe" || x.className === "lax nukkupupelove") {
+                x.className += "love";
+            }
+            else {
+                if (x.className === "lax nukkupupelovelove") {
+                    x.className = "lax nukkupupelove";
+                }
             }
         }
 
